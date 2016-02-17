@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RecommendViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    RecommendViewController *rootVC = [[RecommendViewController alloc]init];
+    self.window.rootViewController = rootVC;
+    
     return YES;
 }
 
